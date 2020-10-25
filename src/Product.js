@@ -2,12 +2,11 @@ import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 
-export default function Product({id, title, image, price, rating}) {
-   // eslint-disable-next-line
-  const [{basket}, dispatch] = useStateValue();
+function Product({ id, title, image, price, rating }) {
+  const [{ basket }, dispatch] = useStateValue();
 
   const addToBasket = () => {
-    // Dispatch the item into th Daa Layer
+    // dispatch the item into the data layer
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -16,9 +15,9 @@ export default function Product({id, title, image, price, rating}) {
         image: image,
         price: price,
         rating: rating,
-      }
-    })
-  }
+      },
+    });
+  };
 
   return (
     <div className="product">
@@ -29,14 +28,19 @@ export default function Product({id, title, image, price, rating}) {
           <strong>{price}</strong>
         </p>
         <div className="product__rating">
-        {Array(rating).fill().map((_,i) => (<span role="img" aria-label="emoji">⭐</span>))}
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>🌟</p>
+            ))}
         </div>
       </div>
-      <img
-        src={image}
-        alt=""
-      />
+
+      <img src={image} alt="" />
+
       <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
 }
+
+export default Product;

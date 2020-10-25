@@ -2,15 +2,17 @@ import React from "react";
 import "./Home.css";
 import Product from "./Product";
 
-export default function Home() {
+function Home() {
   return (
     <div className="home">
       <div className="home__container">
         <img
-          src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/SamsungM/M51/8thSept_GW/P38983965_IN_WLME_SamsungGalaxy_M51_New_Launch_DesktopTallHero_2_1500x600._CB405103024_.jpg"
+          className="home__image"
+          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
         />
-<div className="home__row">
+
+        <div className="home__row">
           <Product
             id="12321341"
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
@@ -64,3 +66,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

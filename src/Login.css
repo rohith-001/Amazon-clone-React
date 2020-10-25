@@ -1,5 +1,5 @@
-.login{
-    background-color: #fff;
+.login {
+    background-color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     width: 100px;
     margin-right: auto;
     margin-left: auto;
-}
+  }
 
 .login__container {
     width: 300px;
@@ -28,7 +28,7 @@
 .login__container > h1 {
     font-weight: 500;
     margin-bottom: 20px;
-}
+  }
 
 .login__container > form > h5 {
     margin-bottom: 5px;
@@ -37,14 +37,13 @@
 .login__container > form > input {
     height: 30px;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: white;
     width: 98%;
-}
+  }
 
 .login__container > p {
     margin-top: 15px;
     font-size: 12px;
-    margin-bottom: 5px;
 }
 
 .login__signInButton {
@@ -55,13 +54,15 @@
     border: 1px solid;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
-}
+  }
 
-.login__registerButton {
+  .login__registerButton {
     border-radius: 2px;
     width: 100%;
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
     border-color: darkgray;
-}
+  }
+  
+  
